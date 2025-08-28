@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials';
 import SuccessStories from './components/SuccessStories';
 import Partners from './components/Partners';
 import Blog from './components/Blog';
+import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -28,6 +29,7 @@ function App() {
         <SuccessStories />
         <Partners />
         {/* <Blog /> */}
+        <FAQ />
         {/* <Contact /> */}
       </main>
       <Footer />

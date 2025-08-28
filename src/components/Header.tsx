@@ -29,6 +29,9 @@ const Header: React.FC = () => {
             <a href="#resources" className="text-slate-700 hover:text-blue-800 px-3 py-2 text-sm font-medium transition-colors">
               Resources
             </a>
+            <a href="#faq" className="text-slate-700 hover:text-blue-800 px-3 py-2 text-sm font-medium transition-colors">
+              FAQ
+            </a>
             <a href="#about" className="text-slate-700 hover:text-blue-800 px-3 py-2 text-sm font-medium transition-colors">
               About
             </a>
@@ -70,6 +73,9 @@ const Header: React.FC = () => {
               </a>
               <a href="#resources" className="block px-3 py-2 text-slate-700 hover:text-blue-800 text-sm font-medium">
                 Resources
+              </a>
+              <a href="#faq" className="block px-3 py-2 text-slate-700 hover:text-blue-800 text-sm font-medium">
+                FAQ
               </a>
               <a href="#about" className="block px-3 py-2 text-slate-700 hover:text-blue-800 text-sm font-medium">
                 About
