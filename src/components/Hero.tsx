@@ -24,6 +24,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
           
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-8 leading-tight tracking-tight">
             Elite talent meets
             <br />
             <span className="bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent italic font-normal">
