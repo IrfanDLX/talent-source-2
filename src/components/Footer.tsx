@@ -1,106 +1,97 @@
 import React from 'react';
-import { Search, Facebook, Twitter, Linkedin, Instagram, Mail, Phone } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* Refined Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center mb-4">
-              <Search className="h-8 w-8 text-amber-500" />
-              <span className="ml-2 text-2xl font-bold">
-                Talent <span className="text-amber-500">Source</span>
+            <div className="mb-6">
+              <span className="text-3xl font-light text-white tracking-tight">
+                Talent<span className="font-normal text-slate-400">Source</span>
               </span>
             </div>
-            <p className="text-slate-300 mb-4 leading-relaxed">
-              Connecting exceptional talent with extraordinary opportunities. 
-              Your career success is our mission.
+            <p className="text-slate-300 mb-8 leading-relaxed font-light">
+              Connecting exceptional talent with extraordinary opportunities through refined professional excellence.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-slate-300 hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-slate-300 hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-slate-300 hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-slate-300 hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
 
-          {/* Job Seekers */}
+          {/* Professionals */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Job Seekers</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Browse Jobs</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Career Advice</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Interview Tips</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Temping</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Training Source</a></li>
+            <h3 className="text-lg font-medium mb-6 tracking-wide">Professionals</h3>
+            <ul className="space-y-4">
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Explore Opportunities</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Career Guidance</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Interview Excellence</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Professional Development</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Success Stories</a></li>
             </ul>
           </div>
 
-          {/* Employers */}
+          {/* Organizations */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Employers</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Post a Job</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Find Candidates</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Recruitment Solutions</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Pricing Plans</a></li>
-              <li><a href="#" className="text-slate-300 hover:text-white transition-colors">Employer Resources</a></li>
+            <h3 className="text-lg font-medium mb-6 tracking-wide">Organizations</h3>
+            <ul className="space-y-4">
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Post Positions</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Find Talent</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Recruitment Solutions</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Partnership Plans</a></li>
+              <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Employer Resources</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <div className="space-y-3">
+            <h3 className="text-lg font-medium mb-6 tracking-wide">Contact</h3>
+            <div className="space-y-4">
               <div className="flex items-center">
-                <Mail className="h-4 w-4 mr-2 text-amber-500 flex-shrink-0" />
-                <span className="text-slate-300">support@talentsource.com</span>
+                <Mail className="h-4 w-4 mr-3 text-slate-400 flex-shrink-0" />
+                <span className="text-slate-300 font-light">support@talentsource.com</span>
               </div>
               <div className="flex items-center">
-                <Phone className="h-4 w-4 mr-2 text-amber-500 flex-shrink-0" />
-                <span className="text-slate-300">+1 (555) 123-4567</span>
+                <Phone className="h-4 w-4 mr-3 text-slate-400 flex-shrink-0" />
+                <span className="text-slate-300 font-light">+1 (555) 123-4567</span>
+              </div>
+              <div className="flex items-start">
+                <MapPin className="h-4 w-4 mr-3 text-slate-400 flex-shrink-0 mt-1" />
+                <div className="text-slate-300 font-light">
+                  <div>123 Business Avenue</div>
+                  <div>San Francisco, CA 94105</div>
+                </div>
               </div>
             </div>
-            
-            {/* <div className="mt-4">
-              <h4 className="text-sm font-semibold mb-2 text-slate-200">Newsletter</h4>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="flex-1 px-3 py-2 bg-slate-800 border border-slate-700 rounded-l-lg text-white placeholder-slate-400 focus:outline-none focus:border-amber-500"
-                />
-                <button className="bg-amber-500 hover:bg-amber-600 px-4 py-2 rounded-r-lg transition-colors">
-                  Subscribe
-                </button>
-              </div>
-            </div> */}
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-12 pt-8">
+        <div className="border-t border-slate-800 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-slate-300 text-sm">
+            <p className="text-slate-400 text-sm font-light">
               © 2024 Talent Source. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-slate-300 hover:text-white text-sm transition-colors">
+            <div className="flex space-x-8 mt-4 md:mt-0">
+              <a href="#" className="text-slate-400 hover:text-white text-sm font-light transition-colors">
                 Privacy Policy
               </a>
-              <a href="#" className="text-slate-300 hover:text-white text-sm transition-colors">
+              <a href="#" className="text-slate-400 hover:text-white text-sm font-light transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="text-slate-300 hover:text-white text-sm transition-colors">
+              <a href="#" className="text-slate-400 hover:text-white text-sm font-light transition-colors">
                 Cookie Policy
               </a>
             </div>
