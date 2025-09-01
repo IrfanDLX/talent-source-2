@@ -11,9 +11,10 @@ const SuccessStories: React.FC = () => {
             <Crown className="h-8 w-8 text-white/60" />
           </div>
           <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 text-balance">
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-8 text-balance">
             Success stories
           </h2>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
             Extraordinary career transformations achieved through our exclusive platform
           </p>
         </div>

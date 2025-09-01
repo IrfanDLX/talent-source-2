@@ -11,9 +11,10 @@ const Partners: React.FC = () => {
             <Building className="h-8 w-8 text-white/60" />
           </div>
           <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 text-balance">
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-8 text-balance">
             Trusted by industry leaders
           </h2>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
             Join the world's most prestigious companies in their pursuit of exceptional talent
           </p>
         </div>
@@ -39,9 +40,10 @@ const Partners: React.FC = () => {
               <Handshake className="h-12 w-12 text-white/80" />
             </div>
             <h3 className="text-4xl md:text-5xl font-serif text-white mb-8 text-balance">
+            <h3 className="text-2xl md:text-3xl font-serif text-white mb-8 text-balance">
               Partner with excellence
             </h3>
-            <p className="text-slate-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed text-xl">
+            <p className="text-slate-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed text-lg">
               Access the world's most exceptional talent and build extraordinary teams through our exclusive platform
             </p>
             <button className="bg-gradient-to-r from-white to-slate-100 hover:from-slate-100 hover:to-white text-slate-900 px-12 py-4 rounded-xl font-medium transition-all diamond-shadow-xl hover:scale-105 sparkle-animation">

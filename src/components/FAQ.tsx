@@ -118,9 +118,10 @@ const FAQ: React.FC = () => {
             </div>
           </div>
           <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 text-balance">
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-8 text-balance">
             Frequently asked questions
           </h2>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
             Find answers to common questions about our exclusive platform
           </p>
         </div>
@@ -154,6 +155,7 @@ const FAQ: React.FC = () => {
                 className="w-full px-10 py-8 text-left flex items-center justify-between hover:bg-white/5 rounded-2xl transition-all"
               >
                 <h3 className="text-xl font-serif text-white pr-6">
+                <h3 className="text-lg font-serif text-white pr-6">
                   {item.question}
                 </h3>
                 <div className="flex-shrink-0">
@@ -169,6 +171,7 @@ const FAQ: React.FC = () => {
                 <div className="px-10 pb-8">
                   <div className="border-t border-white/10 pt-8">
                     <p className="text-slate-300 leading-relaxed font-light text-lg">
+                    <p className="text-slate-300 leading-relaxed font-light">
                       {item.answer}
                     </p>
                   </div>
@@ -185,9 +188,10 @@ const FAQ: React.FC = () => {
               <Gem className="h-12 w-12 text-white/80" />
             </div>
             <h3 className="text-3xl font-serif text-white mb-6">
+            <h3 className="text-2xl font-serif text-white mb-6">
               Still have questions?
             </h3>
-            <p className="text-slate-300 mb-10 font-light leading-relaxed text-lg">
+            <p className="text-slate-300 mb-10 font-light leading-relaxed">
               Our premium support team is here to ensure your success
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">

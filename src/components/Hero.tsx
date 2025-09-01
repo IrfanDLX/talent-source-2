@@ -24,7 +24,6 @@ const Hero: React.FC = () => {
             </div>
           </div>
           
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif text-white mb-8 leading-[0.85] text-balance">
             Elite talent meets
             <br />
             <span className="bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent italic font-normal">
@@ -33,7 +32,7 @@ const Hero: React.FC = () => {
             <br />
             opportunity
           </h1>
-          <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
             Discover exclusive career opportunities with the world's most prestigious organizations
           </p>
         </div>
@@ -83,18 +82,19 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-5xl mx-auto">
           <div className="text-center group">
             <div className="text-5xl md:text-6xl font-serif bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
+            <div className="text-3xl md:text-4xl font-serif bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
               10,000+
             </div>
             <div className="text-slate-400 font-light text-lg">Exclusive positions</div>
           </div>
           <div className="text-center group">
-            <div className="text-5xl md:text-6xl font-serif bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
+            <div className="text-3xl md:text-4xl font-serif bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
               500+
             </div>
             <div className="text-slate-400 font-light text-lg">Elite companies</div>
           </div>
           <div className="text-center group">
-            <div className="text-5xl md:text-6xl font-serif bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
+            <div className="text-3xl md:text-4xl font-serif bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
               98%
             </div>
             <div className="text-slate-400 font-light text-lg">Success rate</div>
