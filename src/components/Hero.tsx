@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-8 leading-tight tracking-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-white mb-8 leading-tight tracking-tight">
             Elite talent meets
             <br />
             <span className="bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent italic font-normal">
@@ -82,7 +82,6 @@ const Hero: React.FC = () => {
         {/* Luxury Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-5xl mx-auto">
           <div className="text-center group">
-            <div className="text-5xl md:text-6xl font-serif bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
             <div className="text-3xl md:text-4xl font-serif bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent mb-3 group-hover:scale-110 transition-transform">
               10,000+
             </div>
@@ -107,5 +106,3 @@ const Hero: React.FC = () => {
 };
 
 export default Hero;
-  )
-}
