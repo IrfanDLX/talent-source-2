@@ -5,48 +5,44 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <header className="glass-effect sticky top-0 z-50 border-b border-white/30">
+    <header className="fixed top-0 left-0 right-0 z-50 glass-subtle border-b border-gray-100/50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {/* Elegant Logo */}
+          {/* Refined Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center">
-              <div className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-900 rounded-full mr-3 flex items-center justify-center">
-                <span className="text-white font-medium text-lg">T</span>
+              <div className="w-8 h-8 bg-gray-900 rounded-lg mr-3 flex items-center justify-center">
+                <span className="text-white font-medium text-sm">T</span>
               </div>
-              <span className="text-2xl font-serif text-slate-800">
-                Talent<span className="text-slate-500 font-light">Source</span>
+              <span className="text-xl font-serif text-gray-900">
+                TalentSource
               </span>
             </div>
           </div>
 
-          {/* Refined Desktop Navigation */}
-          <nav className="hidden md:flex space-x-10">
-            <a href="#jobs" className="text-slate-600 hover:text-slate-800 font-light transition-all duration-300 relative group py-2">
+          {/* Clean Desktop Navigation */}
+          <nav className="hidden md:flex space-x-12">
+            <a href="#jobs" className="text-gray-600 hover:text-gray-900 font-light transition-colors relative group py-2">
               Opportunities
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-slate-600 to-slate-800 transition-all duration-300 group-hover:w-full rounded-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
             </a>
-            <a href="#categories" className="text-slate-600 hover:text-slate-800 font-light transition-all duration-300 relative group py-2">
-              Industries
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-slate-600 to-slate-800 transition-all duration-300 group-hover:w-full rounded-full"></span>
-            </a>
-            <a href="#faq" className="text-slate-600 hover:text-slate-800 font-light transition-all duration-300 relative group py-2">
-              Support
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-slate-600 to-slate-800 transition-all duration-300 group-hover:w-full rounded-full"></span>
-            </a>
-            <a href="#about" className="text-slate-600 hover:text-slate-800 font-light transition-all duration-300 relative group py-2">
+            <a href="#about" className="text-gray-600 hover:text-gray-900 font-light transition-colors relative group py-2">
               About
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-slate-600 to-slate-800 transition-all duration-300 group-hover:w-full rounded-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#faq" className="text-gray-600 hover:text-gray-900 font-light transition-colors relative group py-2">
+              Support
+              <span className="absolute bottom-0 left-0 w-0 h-px bg-gray-900 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </nav>
 
-          {/* Sophisticated CTA Buttons */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="text-slate-600 hover:text-slate-800 font-light transition-all duration-300 px-4 py-2">
+          {/* Minimal CTA Buttons */}
+          <div className="hidden md:flex items-center space-x-6">
+            <button className="text-gray-600 hover:text-gray-900 font-light transition-colors">
               Sign In
             </button>
-            <button className="bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 text-white px-6 py-3 rounded-full font-light transition-all duration-300 elegant-shadow hover:elegant-shadow-lg">
-              Post Position
+            <button className="bg-gray-900 hover:bg-gray-800 text-white px-6 py-2.5 rounded-lg font-light transition-colors refined-shadow">
+              Post Job
             </button>
           </div>
 
@@ -54,35 +50,32 @@ const Header: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-slate-600 hover:text-slate-800 p-2 transition-colors rounded-full"
+              className="text-gray-600 hover:text-gray-900 p-2 transition-colors"
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden border-t border-white/30 glass-effect">
-            <div className="px-4 pt-4 pb-6 space-y-2">
-              <a href="#jobs" className="block py-3 text-slate-600 hover:text-slate-800 font-light transition-colors rounded-lg hover:bg-white/50">
+          <div className="md:hidden border-t border-gray-100/50 glass-subtle">
+            <div className="px-4 pt-4 pb-6 space-y-1">
+              <a href="#jobs" className="block py-3 text-gray-600 hover:text-gray-900 font-light transition-colors">
                 Opportunities
               </a>
-              <a href="#categories" className="block py-3 text-slate-600 hover:text-slate-800 font-light transition-colors rounded-lg hover:bg-white/50">
-                Industries
-              </a>
-              <a href="#faq" className="block py-3 text-slate-600 hover:text-slate-800 font-light transition-colors rounded-lg hover:bg-white/50">
-                Support
-              </a>
-              <a href="#about" className="block py-3 text-slate-600 hover:text-slate-800 font-light transition-colors rounded-lg hover:bg-white/50">
+              <a href="#about" className="block py-3 text-gray-600 hover:text-gray-900 font-light transition-colors">
                 About
               </a>
-              <div className="border-t border-white/30 pt-4 mt-4 space-y-3">
-                <button className="block w-full text-left py-3 text-slate-600 hover:text-slate-800 font-light transition-colors rounded-lg hover:bg-white/50">
+              <a href="#faq" className="block py-3 text-gray-600 hover:text-gray-900 font-light transition-colors">
+                Support
+              </a>
+              <div className="border-t border-gray-100/50 pt-4 mt-4 space-y-3">
+                <button className="block w-full text-left py-3 text-gray-600 hover:text-gray-900 font-light transition-colors">
                   Sign In
                 </button>
-                <button className="block w-full bg-gradient-to-r from-slate-700 to-slate-800 text-white px-6 py-3 rounded-full font-light hover:from-slate-800 hover:to-slate-900 transition-all duration-300">
-                  Post Position
+                <button className="block w-full bg-gray-900 text-white px-6 py-2.5 rounded-lg font-light hover:bg-gray-800 transition-colors">
+                  Post Job
                 </button>
               </div>
             </div>

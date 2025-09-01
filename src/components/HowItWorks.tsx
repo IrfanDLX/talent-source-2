@@ -15,28 +15,28 @@ const stepsForJobSeekers = [
     id: 1,
     title: "Discover",
     description:
-      "Explore curated opportunities from distinguished organizations that align with your professional aspirations.",
+      "Browse curated opportunities from leading companies that match your career goals.",
     icon: Search,
   },
   {
     id: 2,
     title: "Apply",
     description:
-      "Submit your credentials through our refined application process designed for professional excellence.",
+      "Submit applications seamlessly with our streamlined process and smart profile matching.",
     icon: FileText,
   },
   {
     id: 3,
     title: "Connect",
     description:
-      "Engage with industry leaders and showcase your expertise through meaningful professional interactions.",
+      "Engage directly with hiring managers and showcase your expertise through meaningful conversations.",
     icon: MessageCircle,
   },
   {
     id: 4,
     title: "Succeed",
     description:
-      "Embark on your next career chapter with the confidence of our comprehensive support system.",
+      "Land your ideal role with ongoing support throughout your career journey.",
     icon: Trophy,
   },
 ];
@@ -44,30 +44,30 @@ const stepsForJobSeekers = [
 const stepsForEmployers = [
   {
     id: 1,
-    title: "Publish",
+    title: "Post",
     description:
-      "Present your opportunities through our sophisticated platform designed to attract exceptional talent.",
+      "Create compelling job listings that attract top-tier talent to your organization.",
     icon: Briefcase,
   },
   {
     id: 2,
     title: "Review",
     description:
-      "Evaluate candidates through our streamlined assessment tools and intelligent filtering system.",
+      "Evaluate qualified candidates through our intelligent filtering and assessment tools.",
     icon: ClipboardCheck,
   },
   {
     id: 3,
-    title: "Engage",
+    title: "Interview",
     description:
-      "Connect with qualified professionals through our comprehensive communication and interview platform.",
+      "Connect with pre-screened professionals through our comprehensive interview platform.",
     icon: Users,
   },
   {
     id: 4,
     title: "Hire",
     description:
-      "Make confident decisions and seamlessly onboard exceptional talent to drive your organization forward.",
+      "Make confident hiring decisions and onboard exceptional talent seamlessly.",
     icon: Sparkles,
   },
 ];
@@ -80,16 +80,16 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ audience = "employer" }) => {
   const steps = audience === "employer" ? stepsForEmployers : stepsForJobSeekers;
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-slate-50/30">
+    <section className="py-32 bg-gray-50/30" id="about">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-serif text-slate-800 mb-6">
-            How It <span className="text-slate-600 italic">Works</span>
+          <h2 className="text-4xl md:text-6xl font-serif text-gray-900 mb-6 text-balance">
+            How it works
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light leading-relaxed">
             {audience === "employer"
-              ? "A refined approach to talent acquisition"
-              : "Your pathway to professional excellence"}
+              ? "A streamlined approach to finding exceptional talent"
+              : "Your path to career success in four simple steps"}
           </p>
         </div>
 
@@ -99,24 +99,24 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ audience = "employer" }) => {
             return (
               <div key={step.id} className="relative group">
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-24 left-full w-full h-px bg-gradient-to-r from-slate-200 via-slate-300 to-transparent z-0"></div>
+                  <div className="hidden lg:block absolute top-16 left-full w-full h-px bg-gray-200 z-0"></div>
                 )}
-                <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 text-center border border-white/50 elegant-shadow hover:elegant-shadow-lg transition-all duration-500 transform hover:-translate-y-3 z-10">
-                  <div className="w-20 h-20 bg-gradient-to-br from-slate-600 to-slate-700 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 elegant-shadow">
-                    <IconComponent className="h-10 w-10 text-white" />
+                <div className="relative bg-white rounded-2xl p-8 text-center border border-gray-100 refined-shadow hover:refined-shadow-xl transition-all duration-300 z-10">
+                  <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-gray-900 group-hover:text-white transition-all duration-300">
+                    <IconComponent className="h-8 w-8" />
                   </div>
                   
                   <div className="mb-4">
-                    <span className="bg-slate-100/80 text-slate-600 text-sm font-light px-4 py-2 rounded-full">
-                      Step {step.id}
+                    <span className="bg-gray-50 text-gray-600 text-sm font-light px-3 py-1.5 rounded-full">
+                      {step.id}
                     </span>
                   </div>
                   
-                  <h3 className="text-2xl font-serif text-slate-800 mb-4 group-hover:text-slate-700 transition-colors">
+                  <h3 className="text-xl font-serif text-gray-900 mb-4">
                     {step.title}
                   </h3>
                   
-                  <p className="text-slate-600 leading-relaxed font-light">
+                  <p className="text-gray-600 leading-relaxed font-light text-sm">
                     {step.description}
                   </p>
                 </div>
@@ -126,8 +126,8 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ audience = "employer" }) => {
         </div>
 
         <div className="text-center mt-20">
-          <button className="bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 text-white px-12 py-4 rounded-full font-light transition-all duration-300 elegant-shadow hover:elegant-shadow-lg transform hover:scale-105">
-            {audience === "employer" ? "Begin Hiring" : "Start Your Journey"}
+          <button className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-light transition-colors refined-shadow">
+            {audience === "employer" ? "Start hiring" : "Get started"}
           </button>
         </div>
       </div>

@@ -3,14 +3,14 @@ import { partnerCompanies } from '../data/mockData';
 
 const Partners: React.FC = () => {
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-slate-50/30">
+    <section className="py-32 bg-gray-50/30">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-6xl font-serif text-slate-800 mb-6">
-            Trusted by <span className="text-slate-600 italic">Industry Leaders</span>
+          <h2 className="text-4xl md:text-6xl font-serif text-gray-900 mb-6 text-balance">
+            Trusted by industry leaders
           </h2>
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
-            Distinguished organizations that choose excellence
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto font-light leading-relaxed">
+            Join companies that choose excellence in talent acquisition
           </p>
         </div>
 
@@ -18,27 +18,27 @@ const Partners: React.FC = () => {
           {partnerCompanies.map((company) => (
             <div
               key={company.id}
-              className="flex items-center justify-center p-8 bg-white/60 backdrop-blur-sm rounded-3xl hover:bg-white/80 elegant-shadow hover:elegant-shadow-lg transition-all duration-300 group border border-white/50 transform hover:-translate-y-2"
+              className="flex items-center justify-center p-6 bg-white rounded-xl hover:bg-gray-50 refined-shadow hover:refined-shadow-lg transition-all duration-300 group border border-gray-100"
             >
               <img
                 src={company.logo}
                 alt={company.name}
-                className="h-12 w-auto opacity-60 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110"
+                className="h-8 w-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300"
               />
             </div>
           ))}
         </div>
 
         <div className="mt-24 text-center">
-          <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-3xl p-12 text-white elegant-shadow-lg">
-            <h3 className="text-3xl md:text-4xl font-serif text-white mb-6">
-              Join Our <span className="italic font-normal">Network</span>
+          <div className="bg-gray-900 rounded-2xl p-12 text-white refined-shadow-xl">
+            <h3 className="text-3xl md:text-4xl font-serif text-white mb-6 text-balance">
+              Partner with us
             </h3>
-            <p className="text-slate-200 mb-8 max-w-2xl mx-auto font-light leading-relaxed text-lg">
-              Partner with us to access exceptional talent and build extraordinary teams
+            <p className="text-gray-300 mb-8 max-w-2xl mx-auto font-light leading-relaxed text-lg">
+              Access exceptional talent and build extraordinary teams through our platform
             </p>
-            <button className="bg-white text-slate-800 hover:bg-slate-100 px-12 py-4 rounded-full font-light transition-all duration-300 elegant-shadow hover:elegant-shadow-lg transform hover:scale-105">
-              Become a Partner
+            <button className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-light transition-colors refined-shadow">
+              Become a partner
             </button>
           </div>
         </div>
