@@ -3,30 +3,35 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'luc
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-900 text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-gradient-to-br from-slate-800 to-slate-900 text-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Refined Company Info */}
           <div className="lg:col-span-1">
-            <div className="mb-6">
-              <span className="text-3xl font-light text-white tracking-tight">
-                Talent<span className="font-normal text-slate-400">Source</span>
-              </span>
+            <div className="mb-8">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-white/20 to-white/10 rounded-2xl mr-3 flex items-center justify-center">
+                  <span className="text-white font-serif text-xl">T</span>
+                </div>
+                <span className="text-2xl font-serif text-white">
+                  Talent<span className="text-slate-300 font-light">Source</span>
+                </span>
+              </div>
             </div>
             <p className="text-slate-300 mb-8 leading-relaxed font-light">
               Connecting exceptional talent with extraordinary opportunities through refined professional excellence.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300">
+              <a href="#" className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300">
+              <a href="#" className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300">
+              <a href="#" className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-slate-700 transition-all duration-300">
+              <a href="#" className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-110">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -34,7 +39,7 @@ const Footer: React.FC = () => {
 
           {/* Professionals */}
           <div>
-            <h3 className="text-lg font-medium mb-6 tracking-wide">Professionals</h3>
+            <h3 className="text-lg font-serif mb-6">Professionals</h3>
             <ul className="space-y-4">
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Explore Opportunities</a></li>
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Career Guidance</a></li>
@@ -46,7 +51,7 @@ const Footer: React.FC = () => {
 
           {/* Organizations */}
           <div>
-            <h3 className="text-lg font-medium mb-6 tracking-wide">Organizations</h3>
+            <h3 className="text-lg font-serif mb-6">Organizations</h3>
             <ul className="space-y-4">
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Post Positions</a></li>
               <li><a href="#" className="text-slate-300 hover:text-white transition-colors font-light">Find Talent</a></li>
@@ -58,7 +63,7 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-lg font-medium mb-6 tracking-wide">Contact</h3>
+            <h3 className="text-lg font-serif mb-6">Contact</h3>
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-3 text-slate-400 flex-shrink-0" />
@@ -79,7 +84,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-16 pt-8">
+        <div className="border-t border-slate-700/50 mt-16 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-slate-400 text-sm font-light">
               © 2024 Talent Source. All rights reserved.

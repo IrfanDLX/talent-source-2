@@ -50,14 +50,14 @@ const RecentJobs: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-white" id="jobs">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6 tracking-tight">
-            Featured <span className="italic font-normal">Opportunities</span>
+    <section className="py-24 bg-gradient-to-b from-white to-slate-50/50" id="jobs">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-serif text-slate-800 mb-6">
+            Featured <span className="text-slate-600 italic">Opportunities</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
-            Curated positions from distinguished organizations
+            Handpicked positions from distinguished organizations
           </p>
         </div>
 
@@ -66,27 +66,27 @@ const RecentJobs: React.FC = () => {
           ref={scrollContainerRef}
           style={{ scrollBehavior: "auto" }}
         >
-          <div className="flex gap-8 pb-4" style={{ width: "max-content" }}>
+          <div className="flex gap-8 pb-6" style={{ width: "max-content" }}>
             {recentJobs.map((job) => (
               <div
                 key={job.id}
-                className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 p-8 border border-slate-100 hover:border-slate-200 transform hover:-translate-y-2 group"
-                style={{ minWidth: "360px", maxWidth: "360px" }}
+                className="bg-white/80 backdrop-blur-sm rounded-3xl elegant-shadow hover:elegant-shadow-lg transition-all duration-500 p-8 border border-white/50 transform hover:-translate-y-3 group"
+                style={{ minWidth: "380px", maxWidth: "380px" }}
               >
                 <div className="flex items-start justify-between mb-6">
-                  <div className="w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center text-white font-light text-xl tracking-wide">
+                  <div className="w-16 h-16 bg-gradient-to-br from-slate-600 to-slate-700 rounded-2xl flex items-center justify-center text-white font-serif text-xl">
                     {job.company.charAt(0)}
                   </div>
-                  <span className="text-xs bg-slate-100 text-slate-700 px-3 py-2 rounded-full font-medium tracking-wide uppercase">
+                  <span className="text-xs bg-slate-100/80 text-slate-600 px-4 py-2 rounded-full font-light uppercase tracking-wider">
                     {job.type}
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-light text-slate-900 mb-3 leading-tight group-hover:text-slate-700 transition-colors">
+                <h3 className="text-2xl font-serif text-slate-800 mb-3 leading-tight group-hover:text-slate-700 transition-colors">
                   {job.title}
                 </h3>
 
-                <div className="text-lg font-medium text-slate-800 mb-4 tracking-wide">
+                <div className="text-lg text-slate-700 mb-4 font-light">
                   {job.company}
                 </div>
 
@@ -103,7 +103,7 @@ const RecentJobs: React.FC = () => {
                 </div>
 
                 {job.salary && (
-                  <div className="text-xl font-light text-slate-900 mb-6 tracking-wide">
+                  <div className="text-xl font-serif text-slate-800 mb-6">
                     {job.salary}
                   </div>
                 )}
@@ -113,10 +113,10 @@ const RecentJobs: React.FC = () => {
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-slate-400 font-light tracking-wide uppercase">
+                  <span className="text-xs text-slate-400 font-light uppercase tracking-wider">
                     via {job.source}
                   </span>
-                  <button className="bg-slate-900 hover:bg-black text-white px-6 py-3 rounded-xl text-sm font-medium tracking-wide transition-all duration-300 flex items-center gap-2 group hover:shadow-lg">
+                  <button className="bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 text-white px-6 py-3 rounded-full text-sm font-light transition-all duration-300 flex items-center gap-2 group elegant-shadow hover:elegant-shadow-lg transform hover:scale-105">
                     Apply
                     <ExternalLink className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -126,8 +126,8 @@ const RecentJobs: React.FC = () => {
           </div>
         </div>
 
-        <div className="text-center mt-12">
-          <button className="border-2 border-slate-900 text-slate-900 hover:bg-slate-900 hover:text-white px-10 py-4 rounded-xl font-medium tracking-wide transition-all duration-300 hover:shadow-lg">
+        <div className="text-center mt-16">
+          <button className="border-2 border-slate-300 text-slate-700 hover:bg-slate-700 hover:text-white hover:border-slate-700 px-12 py-4 rounded-full font-light transition-all duration-300 elegant-shadow hover:elegant-shadow-lg transform hover:scale-105">
             View All Positions
           </button>
         </div>

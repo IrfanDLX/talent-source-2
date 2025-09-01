@@ -109,16 +109,16 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-50" id="faq">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center">
-              <HelpCircle className="h-8 w-8 text-white" />
+    <section className="py-24 bg-gradient-to-b from-slate-50/30 to-white" id="faq">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <div className="flex justify-center mb-8">
+            <div className="w-20 h-20 bg-gradient-to-br from-slate-600 to-slate-700 rounded-3xl flex items-center justify-center elegant-shadow">
+              <HelpCircle className="h-10 w-10 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6 tracking-tight">
-            Frequently Asked <span className="italic font-normal">Questions</span>
+          <h2 className="text-4xl md:text-6xl font-serif text-slate-800 mb-6">
+            Frequently Asked <span className="text-slate-600 italic">Questions</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
             Find answers to common inquiries about our platform
@@ -126,15 +126,15 @@ const FAQ: React.FC = () => {
         </div>
 
         {/* Elegant Category Filter */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-16">
           {categories.map((category) => (
             <button
               key={category.key}
               onClick={() => setActiveCategory(category.key as any)}
-              className={`px-8 py-3 rounded-xl font-medium transition-all duration-300 text-sm tracking-wide ${
+              className={`px-8 py-4 rounded-full font-light transition-all duration-300 elegant-shadow hover:elegant-shadow-lg transform hover:scale-105 ${
                 activeCategory === category.key
-                  ? 'bg-slate-900 text-white shadow-lg'
-                  : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
+                  ? 'bg-gradient-to-r from-slate-700 to-slate-800 text-white'
+                  : 'bg-white/80 text-slate-700 hover:bg-white border border-slate-200/50'
               }`}
             >
               {category.label} ({category.count})
@@ -143,17 +143,17 @@ const FAQ: React.FC = () => {
         </div>
 
         {/* Refined FAQ Items */}
-        <div className="space-y-4">
+        <div className="space-y-6">
           {filteredFAQs.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl border border-slate-200 hover:border-slate-300 hover:shadow-lg transition-all duration-300"
+              className="bg-white/70 backdrop-blur-sm rounded-3xl border border-white/50 elegant-shadow hover:elegant-shadow-lg transition-all duration-300 transform hover:-translate-y-1"
             >
               <button
                 onClick={() => toggleItem(item.id)}
-                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-slate-50 rounded-2xl transition-colors"
+                className="w-full px-8 py-6 text-left flex items-center justify-between hover:bg-white/50 rounded-3xl transition-colors"
               >
-                <h3 className="text-lg font-light text-slate-900 pr-4 tracking-wide">
+                <h3 className="text-lg font-serif text-slate-800 pr-4">
                   {item.question}
                 </h3>
                 <div className="flex-shrink-0">
@@ -167,7 +167,7 @@ const FAQ: React.FC = () => {
               
               {openItems.has(item.id) && (
                 <div className="px-8 pb-6">
-                  <div className="border-t border-slate-100 pt-6">
+                  <div className="border-t border-slate-100/50 pt-6">
                     <p className="text-slate-600 leading-relaxed font-light">
                       {item.answer}
                     </p>
@@ -179,19 +179,19 @@ const FAQ: React.FC = () => {
         </div>
 
         {/* Elegant Contact Support */}
-        <div className="mt-16 text-center">
-          <div className="bg-slate-900 rounded-2xl p-12 text-white">
-            <h3 className="text-2xl font-light text-white mb-4 tracking-wide">
+        <div className="mt-20 text-center">
+          <div className="bg-gradient-to-br from-slate-700 to-slate-800 rounded-3xl p-12 text-white elegant-shadow-lg">
+            <h3 className="text-3xl font-serif text-white mb-4">
               Need Additional <span className="italic font-normal">Assistance?</span>
             </h3>
-            <p className="text-slate-300 mb-8 font-light leading-relaxed">
+            <p className="text-slate-200 mb-8 font-light leading-relaxed">
               Our dedicated support team is here to ensure your success
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-slate-900 hover:bg-slate-100 px-8 py-4 rounded-xl font-medium tracking-wide transition-all duration-300 hover:shadow-lg">
+              <button className="bg-white text-slate-800 hover:bg-slate-100 px-10 py-4 rounded-full font-light transition-all duration-300 elegant-shadow hover:elegant-shadow-lg transform hover:scale-105">
                 Contact Support
               </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-xl font-medium tracking-wide transition-all duration-300">
+              <button className="border-2 border-white text-white hover:bg-white hover:text-slate-800 px-10 py-4 rounded-full font-light transition-all duration-300 transform hover:scale-105">
                 Live Chat
               </button>
             </div>

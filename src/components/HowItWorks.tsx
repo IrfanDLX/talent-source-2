@@ -80,11 +80,11 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ audience = "employer" }) => {
   const steps = audience === "employer" ? stepsForEmployers : stepsForJobSeekers;
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6 tracking-tight">
-            How It <span className="italic font-normal">Works</span>
+    <section className="py-24 bg-gradient-to-b from-white to-slate-50/30">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-6xl font-serif text-slate-800 mb-6">
+            How It <span className="text-slate-600 italic">Works</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto font-light leading-relaxed">
             {audience === "employer"
@@ -99,20 +99,20 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ audience = "employer" }) => {
             return (
               <div key={step.id} className="relative group">
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-20 left-full w-full h-px bg-gradient-to-r from-slate-200 to-transparent z-0"></div>
+                  <div className="hidden lg:block absolute top-24 left-full w-full h-px bg-gradient-to-r from-slate-200 via-slate-300 to-transparent z-0"></div>
                 )}
-                <div className="relative bg-white rounded-2xl p-8 text-center border border-slate-100 hover:border-slate-200 hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 z-10">
-                  <div className="w-16 h-16 bg-slate-900 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                    <IconComponent className="h-8 w-8 text-white" />
+                <div className="relative bg-white/70 backdrop-blur-sm rounded-3xl p-8 text-center border border-white/50 elegant-shadow hover:elegant-shadow-lg transition-all duration-500 transform hover:-translate-y-3 z-10">
+                  <div className="w-20 h-20 bg-gradient-to-br from-slate-600 to-slate-700 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 elegant-shadow">
+                    <IconComponent className="h-10 w-10 text-white" />
                   </div>
                   
                   <div className="mb-4">
-                    <span className="bg-slate-100 text-slate-600 text-sm font-medium px-4 py-2 rounded-full tracking-wide">
-                      {String(step.id).padStart(2, '0')}
+                    <span className="bg-slate-100/80 text-slate-600 text-sm font-light px-4 py-2 rounded-full">
+                      Step {step.id}
                     </span>
                   </div>
                   
-                  <h3 className="text-2xl font-light text-slate-900 mb-4 group-hover:text-slate-700 transition-colors tracking-wide">
+                  <h3 className="text-2xl font-serif text-slate-800 mb-4 group-hover:text-slate-700 transition-colors">
                     {step.title}
                   </h3>
                   
@@ -125,8 +125,8 @@ const HowItWorks: React.FC<HowItWorksProps> = ({ audience = "employer" }) => {
           })}
         </div>
 
-        <div className="text-center mt-16">
-          <button className="bg-slate-900 hover:bg-black text-white px-12 py-4 rounded-xl font-medium tracking-wide transition-all duration-300 hover:shadow-xl">
+        <div className="text-center mt-20">
+          <button className="bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-800 hover:to-slate-900 text-white px-12 py-4 rounded-full font-light transition-all duration-300 elegant-shadow hover:elegant-shadow-lg transform hover:scale-105">
             {audience === "employer" ? "Begin Hiring" : "Start Your Journey"}
           </button>
         </div>
