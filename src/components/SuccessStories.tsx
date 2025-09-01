@@ -11,6 +11,7 @@ const SuccessStories: React.FC = () => {
             <Crown className="h-8 w-8 text-white/60" />
           </div>
           <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 text-balance">
+          </h2>
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-8 text-balance">
             Success stories
           </h2>
