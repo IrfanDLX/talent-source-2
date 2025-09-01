@@ -11,6 +11,7 @@ const Partners: React.FC = () => {
             <Building className="h-8 w-8 text-white/60" />
           </div>
           <h2 className="text-5xl md:text-7xl font-serif text-white mb-8 text-balance">
+          </h2>
           <h2 className="text-3xl md:text-4xl font-serif text-white mb-8 text-balance">
             Trusted by industry leaders
           </h2>
@@ -40,6 +41,7 @@ const Partners: React.FC = () => {
               <Handshake className="h-12 w-12 text-white/80" />
             </div>
             <h3 className="text-4xl md:text-5xl font-serif text-white mb-8 text-balance">
+            </h3>
             <h3 className="text-2xl md:text-3xl font-serif text-white mb-8 text-balance">
               Partner with excellence
             </h3>
